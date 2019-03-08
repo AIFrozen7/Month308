@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/checkbox_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/product_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_marginLeft="10dp"
+            android:text="name"
+            android:layout_toRightOf="@id/product_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_marginLeft="10dp"
+            android:text="price"
+            android:layout_toRightOf="@id/product_img"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.bwei.Lizhuokai.custom.CustomView
+            android:id="@+id/custom_addOrremove"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.bwei.Lizhuokai.custom.CustomView>
+    </RelativeLayout>
+</LinearLayout>
